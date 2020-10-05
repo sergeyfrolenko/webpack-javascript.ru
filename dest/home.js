@@ -1,5 +1,7 @@
-let welcome = require('./welcome')
+import welcome from './welcome'
 
 welcome(process.env.NODE_ENV)
 
-exports.welcome = welcome;
+export default {
+  welcome
+}

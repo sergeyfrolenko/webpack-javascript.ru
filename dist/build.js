@@ -1,4 +1,4 @@
-var home =
+window["home"] =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -87,21 +87,23 @@ var home =
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-var welcome = __webpack_require__(1);
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// CONCATENATED MODULE: ./dest/welcome.js
+/* harmony default export */ var welcome = (function (msg) {
+  alert("Welcome ".concat(msg));
+});
+// CONCATENATED MODULE: ./dest/home.js
 
 welcome("production");
-exports.welcome = welcome;
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports) {
-
-module.exports = function (msg) {
-  alert("Welcome ".concat(msg));
-};
+/* harmony default export */ var home = __webpack_exports__["default"] = ({
+  welcome: welcome
+});
 
 /***/ })
-/******/ ]);
+/******/ ])["default"];
 //# sourceMappingURL=build.js.map

@@ -1,4 +1,4 @@
-module.exports = function (msg) {
+export default function (msg) {
 
   alert(`Welcome ${msg}`)
 }

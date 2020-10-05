@@ -7,7 +7,9 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'build.js',
-    library: 'home'
+    library: 'home',
+    libraryTarget: 'window',
+    libraryExport: 'default'
   },
   watch: NODE_ENV == 'development',
   watchOptions: {
